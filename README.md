@@ -7,17 +7,28 @@ This project implements and compares three machine learning models
 
 Random Forest ,LSTM, KNN to predict diabetes using a synthetic dataset. The models are evaluated based on their performance metrics, and visualizations are generated to aid in comparison.
 
-Dataset
-The dataset contains the following features:
-Pregnancies: Number of times pregnant.
-Glucose: Plasma glucose concentration.
-BloodPressure: Diastolic blood pressure (mm Hg).
-SkinThickness: Triceps skinfold thickness (mm).
-Insulin: 2-hour serum insulin (mu U/ml).
-BMI: Body mass index (weight in kg/(height in m)^2).
-DiabetesPedigreeFunction: Diabetes pedigree function score.
-Age: Age of the patient.
-Outcome: Target variable (1 = diabetes, 0 = no diabetes).
+Dataset:
+
+The dataset contains the following features::
+
+
+1. Pregnancies: Number of times pregnant.
+
+2. Glucose: Plasma glucose concentration.
+
+3. BloodPressure: Diastolic blood pressure (mm Hg).
+
+4. SkinThickness: Triceps skinfold thickness (mm).
+
+5. Insulin: 2-hour serum insulin (mu U/ml).
+
+6. BMI: Body mass index (weight in kg/(height in m)^2).
+
+7. DiabetesPedigreeFunction: Diabetes pedigree function score.
+
+8. Age: Age of the patient.
+
+(Outcome: Target variable (1 = diabetes, 0 = no diabetes).)
 
 The dataset is preprocessed to handle missing or invalid values, normalize features, and split into training and testing sets.
 
@@ -50,7 +61,7 @@ roc-auc_comparison.png
 
 
 
-## Clone the Repository
+# Clone the Repository
 
 git clone 
 cd avneetkaur_cs634_datamining_final_project
