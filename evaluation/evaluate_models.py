@@ -2,7 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 def summarize_results():
-    
     results = {
         "Model": ["Random Forest", "LSTM", "KNN"],
         "Accuracy": [0.75, 0.78, 0.73],
@@ -13,19 +12,17 @@ def summarize_results():
     }
 
     df = pd.DataFrame(results)
-
-  
     output_path = "outputs/model_comparison.csv"
     df.to_csv(output_path, index=False)
     print(f"Model comparison summary saved as {output_path}")
     print("\nModel Comparison:")
     print(df)
+    return df
 
-    return df  
 def plot_metrics(df):
-   
     metrics = ["Accuracy", "F1-Score", "ROC-AUC"]
     for metric in metrics:
+        print(f"Generating plot for {metric}...")
         plt.figure(figsize=(10, 6))
         plt.bar(df["Model"], df[metric], color=["skyblue", "orange", "green"])
         plt.title(f"{metric} Comparison")
@@ -35,8 +32,8 @@ def plot_metrics(df):
         plot_path = f"outputs/{metric.lower()}_comparison.png"
         plt.savefig(plot_path)
         print(f"{metric} plot saved as {plot_path}")
-        plt.show()
+        plt.close()
 
 if __name__ == "__main__":
-    df = summarize_results()  
-    plot_metrics(df)  
+    df = summarize_results()
+    plot_metrics(df)
