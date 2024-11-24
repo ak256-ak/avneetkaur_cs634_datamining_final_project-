@@ -1,0 +1,4 @@
+Model,Accuracy,Precision,Recall,F1-Score,ROC-AUC
+Random Forest,0.75,0.76,0.74,0.75,0.83
+LSTM,0.78,0.79,0.77,0.78,0.85
+KNN,0.73,0.74,0.71,0.72,0.81
